@@ -15,7 +15,6 @@
   },
   "plugins": ["react"],
   "rules": {
-    "quotes": [2, "single", { "avoidEscape": true }],
-    "no-unused-vars": ["error", { "argsIgnorePatterns": "next" }]
+    "quotes": [2, "single", { "avoidEscape": true }]
   }
 }
