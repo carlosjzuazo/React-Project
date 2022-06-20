@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -13,9 +12,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npm run lint && npm run test && npm run bundle",
+    "eject": "react-scripts eject",
+    "test": "jest",
+    "lint": "eslint src",
+    "bundle": "webpack"
   },
   "eslintConfig": {
     "extends": [
@@ -36,7 +37,22 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@testing-library/react": "^13.3.0",
+    "babel-jest": "^28.1.1",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
     "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
+    "react-test-renderer": "^18.2.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2"
