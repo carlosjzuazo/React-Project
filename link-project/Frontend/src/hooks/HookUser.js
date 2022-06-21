@@ -1,28 +1,28 @@
-import { useEffect, useState } from 'react';
-import { getUserDataRequest } from '../requests';
+import { useEffect, useState } from 'react'
+import { getUserDataRequest } from '../requests'
 
 export const HookUser = (id) => {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const loadUser = async () => {
       try {
-        setLoading(true);
+        setLoading(true)
 
-        const data = await getUserDataRequest(id);
-        console.log(data, setUser);
+        const data = await getUserDataRequest(id)
+        console.log(data, setUser)
       } catch (error) {
-        setError(error.message);
+        setError(error.message)
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
-    };
-    loadUser();
-  }, [id]);
+    }
+    loadUser()
+  }, [id])
 
-  return { user, loading, error };
-};
+  return { user, loading, error }
+}
 
-export default HookUser;
+export default HookUser

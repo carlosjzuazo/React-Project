@@ -1,3 +1,7 @@
+\*! Ante el posible error de conflicto [ERROR in Plugin "react" was conflicted between] hay que pulsar Ctrl+S en el package.json del frontend para compilar.
+
+//Especificaciones de React
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

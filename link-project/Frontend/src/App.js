@@ -1,16 +1,16 @@
-import React from 'react'
-import './App.css'
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
-import { Route, Routes } from 'react-router-dom'
-import { HomePage } from './page_paths/HomePage'
-import { LoginPage } from './page_paths/LoginPage'
-import { UserPage } from './page_paths/UserPage'
-import { PostPage } from './page_paths/PostPage'
-import { NotFoundPage } from './page_paths/NotFoundPage'
-import { RegistrationPage } from './page_paths/RegistrationPage'
+import React from 'react';
+import './App.css';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
+import { HomePage } from './page_paths/HomPage';
+import { LoginPage } from './page_paths/LoginPage';
+import { UserPage } from './page_paths/UserPage';
+import { PostPage } from './page_paths/PostPage';
+import { NotFoundPage } from './page_paths/NotFoundPage';
+import { RegistrationPage } from './page_paths/RegistrationPage';
 
-function App () {
+function App() {
   return (
     <main>
       <Header />
@@ -27,7 +27,7 @@ function App () {
       </div>
       <Footer />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
